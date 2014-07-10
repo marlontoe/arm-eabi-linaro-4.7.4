@@ -116,13 +116,13 @@
 
 /* Define if gcc should always pass --build-id to linker. */
 #ifndef USED_FOR_TARGET
-/* #undef ENABLE_LD_BUILDID */
+#define ENABLE_LD_BUILDID 1
 #endif
 
 
 /* Define to 1 to enable libquadmath support */
 #ifndef USED_FOR_TARGET
-/* #undef ENABLE_LIBQUADMATH_SUPPORT */
+#define ENABLE_LIBQUADMATH_SUPPORT 1
 #endif
 
 
@@ -1287,7 +1287,7 @@
 
 /* Define to the level of your linker's plugin support. */
 #ifndef USED_FOR_TARGET
-#define HAVE_LTO_PLUGIN 2
+#define HAVE_LTO_PLUGIN 0
 #endif
 
 
